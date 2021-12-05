@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"name": "template",
+			"path": "../../../../.."
+		},
+		{
+			"name": "jobly-frontend-main",
+			"path": "../../../../../../Downloads/jobly-frontend-main"
+		},
+		{
+			"name": "Jobly-Backend-main",
+			"path": "../../../../../../Downloads/Jobly-Backend-main"
+		}
+	],
+	"settings": {}
+}
