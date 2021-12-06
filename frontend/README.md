@@ -21,7 +21,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 3. Editing profile information
 4. "Applying" for jobs and dislaying list of applied-to jobs
 
-## Approach :woman_student:
+## Approach :man_student:
 
 1. Created reusable components representing Job, Company, Profile, Forms, etc
 2. Implemented routing via react-router-dom switch component
