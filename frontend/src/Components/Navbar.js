@@ -106,12 +106,12 @@ const Navbar = () => {
                 <div className="p-5 bg-white border rounded shadow-sm">
                   <div className="flex items-center justify-between mb-4">
                     <div>
-                      <NavLink
-                        to="/companies"
-                        aria-label="Company"
-                        title="Company"
-                        className="inline-flex items-center"
-                      >
+                    <NavLink
+                          to="/jobs"
+                          aria-label="jobs"
+                          title="jobs"
+                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        >
                         <svg
                           className="w-8 text-deep-purple-accent-400"
                           viewBox="0 0 24 24"
@@ -124,7 +124,7 @@ const Navbar = () => {
                         >
                         </svg>
                         <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                          Companies
+                          Evaluations
                         </span>
                       </NavLink>
                     </div>
@@ -146,26 +146,6 @@ const Navbar = () => {
                   </div>
                   <nav>
                     <ul className="space-y-4">
-                      <li>
-                        <NavLink
-                          to="/jobs"
-                          aria-label="jobs"
-                          title="jobs"
-                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                        >
-                          Jobs
-                        </NavLink>
-                      </li>
-                      <li>
-                        <NavLink
-                          to="/companies"
-                          aria-label="Our product"
-                          title="Our product"
-                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                        >
-                          Companies
-                        </NavLink>
-                      </li>
                       <li>
                         <NavLink
                           to="/profile"
