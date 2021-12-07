@@ -30,6 +30,13 @@ class User {
                   first_name AS "firstName",
                   last_name AS "lastName",
                   email,
+                  birthDate,
+                  phoneNumber,
+                  address,
+                  city,
+                  state,
+                  countryCode,
+                  postalCode,
                   is_admin AS "isAdmin"
            FROM users
            WHERE username = $1`,
@@ -144,8 +151,8 @@ class User {
             state,
             countryCode,
             postalCode,
-            isAdmin,)
-           VALUES ($1, $2, $3, $4, $5, $6)
+            is_admin)
+           VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13)
            RETURNING username, first_name AS "firstName", last_name AS "lastName", email, is_admin AS "isAdmin"`,
       [username, hashedPassword, email, firstName, lastName, birthDate, phoneNumber, address, city, state, countryCode, postalCode, isAdmin]
     );
