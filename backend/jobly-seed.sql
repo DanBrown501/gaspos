@@ -1,17 +1,18 @@
 -- both test users have the password "password"
 
-INSERT INTO users (username, password, first_name, last_name, email, is_admin)
-VALUES ('testuser',
-        '$2b$12$AZH7virni5jlTTiGgEg4zu3lSvAw68qVEfSIOjJ3RqtbJbdW/Oi5q',
-        'Test',
-        'User',
-        'joel@joelburton.com',
-        FALSE),
-       ('testadmin',
-        '$2b$12$AZH7virni5jlTTiGgEg4zu3lSvAw68qVEfSIOjJ3RqtbJbdW/Oi5q',
-        'Test',
-        'Admin!',
-        'joel@joelburton.com',
+INSERT INTO users (username, password, email, first_name, last_name, birthDate, phoneNumber, address, city, state, countryCode, postalCode, is_admin)
+VALUES ('danbrown501',
+        'Basia123',
+        'test@test.com',
+        'daniel',
+        'Brown',
+	'November09',
+        '8708186803',
+       '123sesamestreet',
+        'NY',
+        'New York',
+        'US',
+        '72227', 
         TRUE);
 
 INSERT INTO companies (handle,

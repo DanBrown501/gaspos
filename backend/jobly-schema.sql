@@ -9,10 +9,17 @@ CREATE TABLE companies (
 CREATE TABLE users (
   username VARCHAR(25) PRIMARY KEY,
   password TEXT NOT NULL,
-  first_name TEXT NOT NULL,
-  last_name TEXT NOT NULL,
   email TEXT NOT NULL
     CHECK (position('@' IN email) > 1),
+  first_name TEXT NOT NULL,
+  last_name TEXT NOT NULL,
+  birthDate VARCHAR(30) NOT NULL,
+  phoneNumber VARCHAR(30) NOT NULL,
+  address VARCHAR(30) NOT NULL,
+  city VARCHAR(30) NOT NULL,
+  state TEXT NOT NULL,
+  countryCode VARCHAR(30) NOT NULL,
+  postalCode VARCHAR(30) NOT NULL,
   is_admin BOOLEAN NOT NULL DEFAULT FALSE
 );
 
